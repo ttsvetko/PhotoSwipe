@@ -208,7 +208,7 @@ module.exports = function(grunt) {
       "\t} else if (typeof exports === 'object') {\n" +
         "\t\tmodule.exports = factory();\n" +
       "\t} else {\n" +
-        "\t\troot.PhotoSwipe = factory();\n" +
+        "\t\t(root || window)[\"PhotoSwipe\"] = factory();\n" +
       "\t}\n" +
     "})(this, function () {\n\n" +
       "\t'use strict';\n"+
